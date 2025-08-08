@@ -25,3 +25,14 @@ function MostrarLista() {
     }
 }
 
+function sortearAmigo() {
+    
+    if(amigos.length > 0) {
+    const indiceSorteado = Math.floor(Math.random() * amigos.length);
+    const nombreSorteado = amigos[indiceSorteado];
+    const mostrarSorteado = document.getElementById('resultado');
+    mostrarSorteado.innerHTML= nombreSorteado;
+    }
+    
+}
+
